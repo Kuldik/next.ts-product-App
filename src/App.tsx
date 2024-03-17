@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import { AboutPage } from './pages/AboutPage/AboutPage';
-import { ProductPage } from './pages/ProductPage/ProductPage';
+import  AboutPage  from './pages/AboutPage/AboutPage';
+import  ProductPage from './pages/ProductPage/ProductPage';
 import { Navigations } from './components/Navigations/Navigations';
 import 'tailwindcss/tailwind.css'
 
