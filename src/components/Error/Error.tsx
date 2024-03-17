@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './Error.module.css'
 
 interface ErrorProps {
     error: string
@@ -6,6 +7,6 @@ interface ErrorProps {
 
 export const Error = ({error}: ErrorProps) => {
   return (
-    <div><p className="text-center text-3xl bg-red-300 rounded-xl">{ error }</p></div>
+    <div><p className={styles.heading}>{ error }</p></div>
   )
 }

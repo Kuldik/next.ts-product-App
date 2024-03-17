@@ -1,0 +1,21 @@
+.button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 999px;
+    color: #FF0000;
+    background-image: linear-gradient(to right, #FFD700, #484c50);
+    margin-bottom: 2px;
+    transition: all 300ms ease-in;
+    outline: none;
+    border: none;
+    padding: 14px 16px;
+  }
+  
+  .button:hover {
+    background-image: linear-gradient(to right, #130a8f, #d000ff);
+    color: #FF40FF;
+    border: none;
+    background-color: #FFD700;
+    border-radius: 40px 0 40px 0;
+  }

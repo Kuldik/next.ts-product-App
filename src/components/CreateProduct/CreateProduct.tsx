@@ -1,8 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
-import { IProduct } from '../models'
+import { IProduct } from '../../models'
 import axios from 'axios'
-import { Error } from './Error';
+import { Error } from '../Error/Error';
+import styles from './CreateProduct.module.css'
 
 const generateRandomImageURL = (productId: number) => {
     const randomNumber = Math.floor(Math.random() * 1000);
@@ -59,7 +60,7 @@ export const CreateProduct = ({onCreate}: CreateProductProps) => {
     <form onSubmit={submitHandler} action="">
         <input
             type="text" 
-            className='border py-2 px-4 mb-2 w-full outline-none'
+            className={styles.input}
             placeholder='Enter product name'
             value={value}
             onChange={changeHandler}
@@ -67,7 +68,7 @@ export const CreateProduct = ({onCreate}: CreateProductProps) => {
 
         { error && <Error error={error}/>}
 
-        <button type='submit' className='mt-3 border py-2 px-4 rounded text-red-600 bg-gradient-to-r mb-2 from-blue-300 to-azure-400 hover:from-green-600 hover:to-blue-400 transition-all duration-300 ease-in hover:text-purple-900 hover:border-yellow-500 hover:bg-yellow-400 outline-none rounded-ss-[40px] rounded-se-[0px] rounded-ee-[40px] rounded-es-[0px] hover:rounded-es-[40px] hover:rounded-se-[40px] hover:rounded-ss-[0px] ease w-[100px]'>Create</button>
+        <button type='submit' className={styles.button}>Create</button>
     </form>
   )
 }

@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1.875rem; 
+    background-color: #718096;
+    border-radius: 0.75rem; 
+  }

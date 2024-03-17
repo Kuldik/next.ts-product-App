@@ -1,0 +1,29 @@
+.overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5); 
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .popup {
+    width: 500px;
+    text-align: center;
+    border-radius: 0.375rem;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .title {
+    font-size: 1.5rem; 
+    padding-bottom: 1rem; 
+    font-weight: 600;
+  }
