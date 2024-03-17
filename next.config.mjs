@@ -1,7 +1,5 @@
-const path = require('path');
-
-module.exports = {
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
-  },
+const nextConfig = {
+  output: "export",
 };
+
+export default nextConfig;
