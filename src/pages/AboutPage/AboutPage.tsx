@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './AboutPage.module.css'
 
-export const AboutPage = () => {
+const AboutPage = () => {
   return (
     <div className={styles.container}>
         <div className={styles.text}>
@@ -10,3 +10,6 @@ export const AboutPage = () => {
     </div>
   )
 }
+
+
+export default AboutPage

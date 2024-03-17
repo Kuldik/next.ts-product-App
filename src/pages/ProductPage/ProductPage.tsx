@@ -9,7 +9,7 @@ import { IProduct } from '../../models';
 import { ModalContext } from '../../context/ModalContext';
 import styles from  './ProductPage.module.css';
 
-export const ProductPage = () => {
+const ProductPage = () => {
     const {products, loading, error, addProduct} = useProducts()
     const { modal, onOpen: openModal, onClose: closeModal } = useContext(ModalContext)
   
@@ -37,3 +37,5 @@ export const ProductPage = () => {
       </div>
     )
 }
+
+export default ProductPage
